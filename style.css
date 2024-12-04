@@ -1,0 +1,22 @@
+.profile-card .role, .profile-card .name {
+  font-style: italic;
+}
+
+.profile-card {
+  padding: 10px;
+}
+.profile-card .avatar {
+  border-radius: 10px;
+  border: 2px solid #cc0000;
+  height: 20px;
+}
+.profile-card .name {
+  font-size: 24px;
+  color: #2ecc71;
+}
+.profile-card .role {
+  font-size: 18px;
+  color: #3498db;
+}
+
+/*# sourceMappingURL=style.css.map */

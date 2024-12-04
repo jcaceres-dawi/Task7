@@ -1,0 +1,15 @@
+@mixin radius($radius) {
+  border-radius: $radius;
+}
+
+%text-italic {
+  font-style: italic;
+}
+
+@function changeColor($color, $amount) {
+  @if $amount > 0 {
+    @return lighten($color, $amount);
+  } @else {
+    @return darken($color, abs($amount));
+  }
+}

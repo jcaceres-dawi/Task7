@@ -1,0 +1,32 @@
+@import "variable";
+@import "mixins";
+
+.profile-card {
+  @if $screen-size == small {
+    padding: 10px;
+  } @else if $screen-size == medium {
+    padding: 20px;
+  } @else if $screen-size == large {
+    padding: 40px;
+  } @else {
+    padding: 15px;
+  }
+
+  .avatar {
+    @include radius($radius: 10px);
+    border: 2px solid changeColor(red, -10%);
+    height: 20px;
+  }
+
+  .name {
+    font-size: $font-size-large;
+    color: $secondary-color;
+    @extend %text-italic;
+  }
+
+  .role {
+    font-size: $font-size-medium;
+    color: $primary-color;
+    @extend %text-italic;
+  }
+}
